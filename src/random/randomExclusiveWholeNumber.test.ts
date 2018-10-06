@@ -1,5 +1,8 @@
-import { randomInclusiveWholeNumber } from './randomInclusiveWholeNumber'
+import { randomExclusiveWholeNumber } from './randomExclusiveWholeNumber'
 
-export const randomExclusiveWholeNumber = (upperLimit: number, lowerLimit: number): number => {
-  return randomInclusiveWholeNumber(upperLimit - 1, lowerLimit + 1)
-}
+describe('randomExclusiveWholeNumber', () => {
+  it('should return 2 if given 1 and 3', () => {
+    const result = randomExclusiveWholeNumber(3, 1)
+    expect(result).toBe(2)
+  })
+})
