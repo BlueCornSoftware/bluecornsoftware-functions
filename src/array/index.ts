@@ -1,4 +1,4 @@
-import flatMap from './flatMap';
+import flatMap from './flatMap'
 
 export {
   flatMap,
