@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo
-echo '(Post Commit)'
+echo "(Pre Commit) "
 echo
