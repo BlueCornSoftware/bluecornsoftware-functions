@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/BlueCornSoftware/utils#readme",
   "devDependencies": {
+    "@types/jest": "^23.3.3",
     "husky": "^1.1.1",
     "jest": "^23.6.0",
-    "ts-jest": "^23.10.3"
+    "ts-jest": "^23.10.3",
+    "typescript": "^3.1.1"
   }
 }
