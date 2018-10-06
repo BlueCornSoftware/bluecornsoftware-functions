@@ -1,5 +1,5 @@
 {
-  "name": "bluecornsoftware-utils",
+  "name": "bluecornsoftware-functions",
   "version": "1.0.0",
   "description": "Generic Function Library",
   "main": "index.js",
