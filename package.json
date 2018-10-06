@@ -1,0 +1,28 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "Generic Function Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueCornSoftware/utils.git"
+  },
+  "keywords": [
+    "utility",
+    "functions",
+    "typescript",
+    "ts"
+  ],
+  "author": "BlueCornSoftware",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlueCornSoftware/utils/issues"
+  },
+  "homepage": "https://github.com/BlueCornSoftware/utils#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
