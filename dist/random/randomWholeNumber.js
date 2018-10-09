@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var randomInclusiveWholeNumber_1 = require("./randomInclusiveWholeNumber");
 var randomExclusiveWholeNumber_1 = require("./randomExclusiveWholeNumber");
 exports.randomWholeNumber = function (a, b, opts) {
@@ -17,4 +17,3 @@ exports.randomWholeNumber = function (a, b, opts) {
     }
     return randomInclusiveWholeNumber_1.randomInclusiveWholeNumber(a, b || 0);
 };
-//# sourceMappingURL=randomWholeNumber.js.map

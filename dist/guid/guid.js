@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var table = {};
 var s = function () { return Math
     .floor((1 + Math.random()) * 0x10000)
@@ -14,4 +14,3 @@ exports.guid = function () {
     table[u] = true;
     return u;
 };
-//# sourceMappingURL=guid.js.map

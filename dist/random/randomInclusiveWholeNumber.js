@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var isNumber = function (num) { return typeof num === 'number'; };
 exports.randomInclusiveWholeNumber = function (a, b) {
     var bIsNumber = isNumber(b);
@@ -8,4 +8,3 @@ exports.randomInclusiveWholeNumber = function (a, b) {
     var randomSeed = Math.random() * (upperLimit - lowerLimit + 1);
     return Math.floor(randomSeed + lowerLimit);
 };
-//# sourceMappingURL=randomInclusiveWholeNumber.js.map
