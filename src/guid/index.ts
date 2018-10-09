@@ -1,5 +1,3 @@
-import { guid } from './guid';
+import { guid } from './guid'
 
-export {
-  guid,
-}
+export default guid

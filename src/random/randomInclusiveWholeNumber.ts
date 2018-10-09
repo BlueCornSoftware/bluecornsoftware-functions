@@ -1,4 +1,4 @@
-const isNumber = num => typeof num === 'number'
+const isNumber = (num: number) => typeof num === 'number'
 
 export const randomInclusiveWholeNumber = (a: number, b: number): number => {
   const bIsNumber = isNumber(b)
