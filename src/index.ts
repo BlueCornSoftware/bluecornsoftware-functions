@@ -1,4 +1,4 @@
 export * from './array/index'
-// export * from './guid'
-// export * from './random'
+export * from './guid/index'
+export * from './random/index'
 
