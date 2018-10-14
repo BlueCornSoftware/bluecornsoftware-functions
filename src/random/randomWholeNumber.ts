@@ -17,7 +17,7 @@ export const randomWholeNumber = (
     if (inclusive) {
       return randomInclusiveWholeNumber(a, b || 0)
     } else {
-      return randomExclusiveWholeNumber(a, b)
+      return randomExclusiveWholeNumber(a, b || 0)
     }
   }
   return randomInclusiveWholeNumber(a, b || 0)
