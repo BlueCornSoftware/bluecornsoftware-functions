@@ -1,4 +1,4 @@
 import { randomInclusiveWholeNumber } from './randomInclusiveWholeNumber'
 
-export const randomExclusiveWholeNumber = (upperLimit: number, lowerLimit: number = 0): number =>
-  randomInclusiveWholeNumber(upperLimit - 1, lowerLimit + 1)
+export const randomExclusiveWholeNumber = (a: number, b: number = 0): number =>
+  randomInclusiveWholeNumber(Math.max(a, b) - 1, Math.min(a, b) + 1)
