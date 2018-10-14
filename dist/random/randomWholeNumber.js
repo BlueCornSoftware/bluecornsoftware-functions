@@ -12,7 +12,7 @@ exports.randomWholeNumber = function (a, b, opts) {
             return randomInclusiveWholeNumber_1.randomInclusiveWholeNumber(a, b || 0);
         }
         else {
-            return randomExclusiveWholeNumber_1.randomExclusiveWholeNumber(a, b);
+            return randomExclusiveWholeNumber_1.randomExclusiveWholeNumber(a, b || 0);
         }
     }
     return randomInclusiveWholeNumber_1.randomInclusiveWholeNumber(a, b || 0);
