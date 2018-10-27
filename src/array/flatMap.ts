@@ -1,5 +1,4 @@
-import { MappingFunction } from './types'
+const concat = (x: any[], y: any[]) => x.concat(y)
 
-const concat = (x, y) => x.concat(y)
-
-export default (array: any[], func: MappingFunction) => array.map(func).reduce(concat, [])
+export const flatMap = (array: any[], func: (value: any, index?: number, array?: any[]) => any[]): any[] =>
+  array.map(func).reduce(concat, [])
