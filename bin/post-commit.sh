@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo
-echo "(Post Commit) Building dist..."
+echo "(Post Commit) "
 echo
-npm run build
+
