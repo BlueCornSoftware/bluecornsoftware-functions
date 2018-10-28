@@ -1,4 +1,6 @@
 {
+  "files.insertFinalNewline": true,
+  "editor.tabSize": 2,
   "files.associations": {
     "./**/*.sh": "bash",
     ".huskyrc": "json"

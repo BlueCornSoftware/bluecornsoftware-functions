@@ -1,5 +1,6 @@
 #!/bin/bash
 
 echo
-echo '(Post Commit)'
+echo "(Post Commit) "
 echo
+
