@@ -4,3 +4,7 @@ var flatMap_1 = require("./flatMap");
 exports.flatMap = flatMap_1.flatMap;
 var randomIndex_1 = require("./randomIndex");
 exports.randomIndex = randomIndex_1.randomIndex;
+var uniq_1 = require("./uniq");
+exports.uniq = uniq_1.uniq;
+var uniqueBy_1 = require("./uniqueBy");
+exports.uniqueBy = uniqueBy_1.uniqueBy;
