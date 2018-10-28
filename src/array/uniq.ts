@@ -1,11 +1,11 @@
 export function uniq<T>(list: T[]): T[] {
   const table = {}
 
-  for (const item of list) {
-    if (typeof item === 'object') {
-      table[JSON.stringify(item)] = item
+  for (let i = 0; i < list.length; i++) {
+    if (typeof list[i] === 'object') {
+      table[JSON.stringify(list[i])] = list[i]
     } else {
-      table[String(item)] = item
+      table[String(list[i])] = list[i]
     }
   }
 
