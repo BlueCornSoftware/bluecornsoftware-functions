@@ -1,6 +1,6 @@
 {
   "hooks": {
     "post-commit": "bash bin/post-commit.sh",
-    "pre-receive": "bash bin/pre-receive.sh"
+    "post-receive": "bash bin/pre-receive.sh"
   }
 }
