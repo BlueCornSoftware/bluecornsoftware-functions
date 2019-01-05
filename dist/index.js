@@ -4,5 +4,6 @@ function __export(m) {
 }
 exports.__esModule = true;
 __export(require("./array/index"));
+__export(require("./object/index"));
 __export(require("./guid/index"));
 __export(require("./random/index"));
