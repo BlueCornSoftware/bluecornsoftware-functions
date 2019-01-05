@@ -1,6 +1,5 @@
 {
   "hooks": {
-    "post-commit": "bash bin/post-commit.sh",
-    "pre-push": "bash bin/pre-push.sh"
+    "pre-commit": "bash bin/pre-commit.sh"
   }
 }
