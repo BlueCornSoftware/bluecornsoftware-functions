@@ -3,5 +3,5 @@ export function omit<T extends object>(obj: T, ...bannedKeys): Partial<T> {
   for (let i = 0; i < bannedKeys.length; i++) {
     delete copy[bannedKeys[i]]
   }
-  return copy;
+  return copy
 }
