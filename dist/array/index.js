@@ -2,6 +2,8 @@
 exports.__esModule = true;
 var flatMap_1 = require("./flatMap");
 exports.flatMap = flatMap_1.flatMap;
+var intersection_1 = require("./intersection");
+exports.intersection = intersection_1.intersection;
 var randomIndex_1 = require("./randomIndex");
 exports.randomIndex = randomIndex_1.randomIndex;
 var uniq_1 = require("./uniq");

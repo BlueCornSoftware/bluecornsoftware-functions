@@ -1,6 +1,7 @@
 export const linesOfMaxLength = (longLine: string, maxLength: number): string[] => {
   if (maxLength <= 0) {
     return []
+
   }
   if (longLine.length < maxLength) {
     return [longLine]
