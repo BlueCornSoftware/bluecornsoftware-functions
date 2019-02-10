@@ -11,7 +11,7 @@ const tables = [
 describe('Function: intersection', () => {
   let result
   tables.forEach(t => {
-    (t.pendResult ? xit : it)(getItSentence(t), () => {
+    it(getItSentence(t), () => {
       result = intersection(t.inputs[0], t.inputs[1])
       expect(result.toString()).toBe(t.expectation.toString())
     })
@@ -28,6 +28,6 @@ function getItSentence(t) {
 
 function withInputs(...inputs) {
   return {
-    expect: (expectation, options = { pendResult: false }) => ({ inputs, expectation, ...options })
+    expect: expectation => ({ inputs, expectation })
   }
 }
