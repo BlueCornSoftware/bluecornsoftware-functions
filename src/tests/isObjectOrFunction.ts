@@ -1,4 +1,4 @@
-import { equalsAny } from "./equalsAny"
-
-export const isObjectOrFunction = (subject: any): boolean =>
-  equalsAny('function', 'object')(typeof (subject))
+export const isObjectOrFunction = (subject: any): boolean => {
+  const t = typeof subject
+  return t === 'object' || t === 'function'
+}
