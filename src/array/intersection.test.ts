@@ -5,12 +5,13 @@ const tables = [
   withInputs([1], [1, 4]).expect([1]),
   withInputs([{ name: 'Jake' }], [{ name: 'Jake' }, 4]).expect([{ name: 'Jake' }]),
   withInputs([{ age: 3 }], [{ name: 'Jake' }, 4]).expect([]),
+  withInputs([() => {}], [() => {}]).expect([() => {}], { pendResult: true })
 ]
 
 describe('Function: intersection', () => {
   let result
   tables.forEach(t => {
-    it(getItSentence(t), () => {
+    (t.pendResult ? xit : it)(getItSentence(t), () => {
       result = intersection(t.inputs[0], t.inputs[1])
       expect(result.toString()).toBe(t.expectation.toString())
     })
@@ -27,6 +28,6 @@ function getItSentence(t) {
 
 function withInputs(...inputs) {
   return {
-    expect: (expectation) => ({ inputs, expectation })
+    expect: (expectation, options = { pendResult: false }) => ({ inputs, expectation, ...options })
   }
 }
