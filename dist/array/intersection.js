@@ -1,7 +1,6 @@
 "use strict";
 exports.__esModule = true;
 var isObjectOrFunction_1 = require("../tests/isObjectOrFunction");
-var isObject_1 = require("../tests/isObject");
 function intersection(arr1, arr2) {
     var table = createTableFromArray(arr1);
     var common = [];
@@ -22,7 +21,7 @@ function createTableFromArray(arr) {
         if (!isObjectOrFunction_1.isObjectOrFunction(el)) {
             table[String(el)] = el;
         }
-        else if (isObject_1.isObject(el)) {
+        else if (isObjectOrFunction_1.isObjectOrFunction(el)) {
             table[JSON.stringify(el)] = el;
         }
     }
@@ -32,7 +31,7 @@ function foundInTable(table, el) {
     if (!isObjectOrFunction_1.isObjectOrFunction(el)) {
         return !!table[String(el)];
     }
-    if (isObject_1.isObject(el)) {
+    else {
         return !!table[JSON.stringify(el)];
     }
 }

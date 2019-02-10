@@ -5,7 +5,7 @@ const tables = [
   withInputs([1], [1, 4]).expect([1]),
   withInputs([{ name: 'Jake' }], [{ name: 'Jake' }, 4]).expect([{ name: 'Jake' }]),
   withInputs([{ age: 3 }], [{ name: 'Jake' }, 4]).expect([]),
-  withInputs([() => {}], [() => {}]).expect([() => {}], { pendResult: true })
+  withInputs([b => b], [b => b]).expect([b => b])
 ]
 
 describe('Function: intersection', () => {
