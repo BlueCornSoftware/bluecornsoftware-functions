@@ -4,15 +4,18 @@ var isObjectOrFunction_1 = require("../tests/isObjectOrFunction");
 function intersection(arr1, arr2) {
     var table = createTableFromArray(arr1);
     var common = [];
+    var element;
     for (var j = 0; j < arr2.length; j++) {
-        if (!foundInTable(table, arr2[j])) {
+        element = arr2[j];
+        if (!foundInTable(table, element)) {
             continue;
         }
-        common.push(arr2[j]);
+        common.push(element);
     }
     return common;
 }
 exports.intersection = intersection;
+/////////////////////
 function createTableFromArray(arr) {
     var table = {};
     var el;

@@ -1,17 +1,20 @@
 import { isObjectOrFunction } from '../tests/isObjectOrFunction'
 
-
-export function intersection<T, K>(arr1: Array<T | K>, arr2: Array<T | K>): Array<T | K> {
+export function intersection<T, K>(arr1: T[], arr2: K[]): Array<T | K> {
   const table = createTableFromArray(arr1)
   const common = []
+  let element
   for (let j = 0; j < arr2.length; j++) {
-    if (!foundInTable(table, arr2[j])) {
+    element = arr2[j]
+    if (!foundInTable(table, element)) {
       continue
     }
-    common.push(arr2[j])
+    common.push(element)
   }
   return common
 }
+
+/////////////////////
 
 function createTableFromArray(arr) {
   const table = {}
